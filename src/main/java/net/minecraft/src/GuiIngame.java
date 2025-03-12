@@ -99,7 +99,7 @@ public class GuiIngame extends Gui {
 				if(var13 <= 4) {
 					var17 += this.rand.nextInt(2);
 				}
-
+				if (!GameSettings.isCreative) {
 				this.drawTexturedModalRect(var19, var17, 16 + var28 * 9, 0, 9, 9);
 				if(var12) {
 					if(var16 * 2 + 1 < var14) {
@@ -118,6 +118,10 @@ public class GuiIngame extends Gui {
 				if(var16 * 2 + 1 == var13) {
 					this.drawTexturedModalRect(var19, var17, 61, 0, 9, 9);
 				}
+				
+			}else {
+				mc.thePlayer.fallDistance = 0.0f;
+			}
 			}
 
 			if(this.mc.thePlayer.isInsideOfMaterial(Material.water)) {

@@ -54,6 +54,7 @@ public class GameSettings {
 	public float field_22272_F = 1.0F;
 	public float field_22271_G = 1.0F;
 	public int guiScale = 0;
+	public static boolean isCreative = false;
 
 	public GameSettings(Minecraft var1, String var2) {
 		this.mc = var1;
